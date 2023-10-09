@@ -1,4 +1,4 @@
 # IT_sem5
 Strona internetowa
 
-Malik chuj
+Malik chuj i dupa
