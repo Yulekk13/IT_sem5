@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Meety</title>
     <meta
       name="description"
@@ -12,102 +15,124 @@
     grupie sprawi, że nie tylko poradzisz sobie świetnie na testach, ale i
     poznasz ekstra ludzi"
     />
-    <meta name= "author" content="Szymon Stolarek, Piotr Malec"/>
+    <meta name="author" content="Szymon Stolarek, Piotr Malec" />
     <meta name="keywords" content="nauka, spotkania, studia" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    
-    <!-- Fontello do poprawy xD -->
-    <link rel="stylesheet" href="fonts/fontello.css" type="text/css" />
 
-    <!-- Czcionka -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
     />
-  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
     <!-- Bootstrap -->
     <!-- Pierw bootstrap potem styl zeby nie nadpisac stulu -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-
   </head>
 
-
   <body>
-    <div class="container-fluid">
-      
-      <header>
-
-        <nav class="navbar navbar-dark bg-primary navbar-expand-md">
-
-          <a class="navbar-brand" href="#"><img src="pictures/logo.png" width="30" height="30" class="d-inline-block mx-1 allign-bottom" alt=""><i class="icon-chat"></i> Meety</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="#menu" aria-expanded="false" aria-label="Switch menu">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="text-primary mb-0 display-5">
+              Mee<span class="text-white">Ty</span>
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler bg-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-white"></span>
           </button>
-        
-          <!-- Rozwijane menu -->
-          <div class="collapse navbar-collapse" id="menu">
-
-            <ul class="navbar-nav mr-auto">
-
-              <li class="nav_item active"> <!--active - lekkie podswietlenie gdzie sie znajdujemy-->
-                <a class="nav-link" href="#">Main menu</a>
-              </li>
-
-              <li class="nav_item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="submenumeet" aria-haspopup="true" href="#">Meetings</a>
-                  <div class="dropdown-menu" aria-labelledby="submenumeet">
-                   <a class="dropdown-item" href="#">Create a meeting</a>
-                   <a class="dropdown-item" href="#">Hop in to the meeeting</a>
-                 </div>
-              </li>
-
-              <li class="nav_item">
-                <a class="nav-link" href="#">Quick advices</a>
-              </li>
-
-              <li class="nav_item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="submenuabout" aria-haspopup="true" href="#">About us</a>
-                  <div class="dropdown-menu" aria-labelledby="submenuabout">
-                   <a class="dropdown-item" href="#">Szymon Stolarek</a>
-                   <a class="dropdown-item" href="#">Piotr Malec</a>
-                 </div>
-              </li>
-
-            </ul>
-
+          <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Meetings</a
+                >
+                <div class="dropdown-menu m-0 bg-primary">
+                  <a href="#" class="dropdown-item">Create meeting</a>
+                  <a href="#" class="dropdown-item">Join meeting</a>
+                </div>
+              </div>
+              <a href="#" class="nav-item nav-link">Advices</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >About us</a
+                >
+                <div class="dropdown-menu m-0 bg-primary">
+                  <a href="#" class="dropdown-item">About MeeTy</a>
+                  <a href="#" class="dropdown-item">Szymon Stolarek</a>
+                  <a href="#" class="dropdown-item">Piotr Malec</a>
+                </div>
+              </div>
+            </div>
           </div>
-
         </nav>
-
-      </header>
-     
+      </div>
     </div>
+    <!-- End of navbar -->
 
-  <main>
+    <div class="container-fluid">
+      <aside class="left-side">lewy</aside>
 
-    <!-- Zegar -->
-    <div id="clockContainer">
-      <div id="hour"></div>
-      <div id="minute"></div>
-      <div id="second"></div>
+      <article class="content">
+        <h1>Welcome on Meety!!</h1>
+      </article>
+
+      <aside class="right-side">
+        prawy
+        <script src="clock.js"></script>
+      </aside>
+      <div class="clear-both"></div>
+
+      <footer class="footer">footer</footer>
     </div>
-
-  </main>
-
-    <script src="clock.js"></script>
-
-    <!-- Skrypt js z bootstrapa -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-
   </body>
 </html>
