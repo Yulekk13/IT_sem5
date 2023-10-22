@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>MeeTy</title>
+    <title>Sign up MeeTy</title>
     <meta
       name="description"
       content="Chcesz się przygotować do egzaminu,
@@ -63,6 +63,7 @@
     <!-- Pierw bootstrap potem styl zeby nie nadpisac stulu -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="registration.css" type="text/css" />
   </head>
 
   <body>
@@ -85,7 +86,7 @@
           </button>
           <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -98,20 +99,18 @@
                   <a href="#" class="dropdown-item">Join meeting</a>
                 </div>
               </div>
-              <a href="blog.html" class="nav-item nav-link">Advices</a>
+              <a href="#" class="nav-item nav-link">Advices</a>
               <div class="nav-item dropdown">
                 <a
-                  href="abMeeTy.html"
+                  href="#"
                   class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   >About us</a
                 >
                 <div class="dropdown-menu m-0 bg-primary">
-                  <a href="abMeeTy.html" class="dropdown-item">About MeeTy</a>
-                  <a href="abSzymon.html" class="dropdown-item"
-                    >Szymon Stolarek</a
-                  >
-                  <a href="abPiotr.html" class="dropdown-item">Piotr Malec</a>
+                  <a href="#" class="dropdown-item">About MeeTy</a>
+                  <a href="#" class="dropdown-item">Szymon Stolarek</a>
+                  <a href="#" class="dropdown-item">Piotr Malec</a>
                 </div>
               </div>
             </div>
@@ -120,21 +119,85 @@
       </div>
     </div>
     <!-- End of navbar -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--  Registration module  -->
+    <form class="registration">
+      <!--  Name input  -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" class="form-control" />
+        <label class="form-label" for="form2Example1">Your Name</label>
+      </div>
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" class="form-control" />
+        <label class="form-label" for="form2Example1">Email address</label>
+      </div>
 
-    <div class="container-fluid">
-      <aside class="left-side">lewy</aside>
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control" />
+        <label class="form-label" for="form2Example2">Password</label>
+      </div>
 
-      <article class="content">
-        <h1>Welcome on Meety!!</h1>
-      </article>
+      <!-- Repeat password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control" />
+        <label class="form-label" for="form2Example2">Repeat password</label>
+      </div>
 
-      <aside class="right-side">
-        prawy
-        <script src="clock.js"></script>
-      </aside>
-      <div class="clear-both"></div>
+      <!-- 2 column grid layout for inline styling -->
+      <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+          <!-- Checkbox -->
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="form2Example31"
+              checked
+            />
+            <label class="form-check-label" for="form2Example31">
+              Remember me
+            </label>
+          </div>
+        </div>
 
-      <footer class="footer">footer</footer>
-    </div>
+        <div class="col">
+          <!-- Simple link -->
+          <a href="login.html">Already have account?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button type="button" class="btn btn-primary btn-block mb-4">
+        Sign in
+      </button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not a member? <a href="#!">Register</a></p>
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+    </form>
   </body>
 </html>
