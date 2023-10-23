@@ -7,8 +7,19 @@ body
   font-family: 'Open Sans', sans-serif;
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .left-side
 {
+  display: 1;
   float: left;
   width: 16%;
   background-color: aqua;
@@ -16,7 +27,7 @@ body
 
 .content
 {
-
+  display: 1;
   float: left;
   width: 68%;
   background-color: blueviolet;
@@ -25,6 +36,7 @@ body
 
 .right-side
 {
+  display: 1;
   float: left;
   width: 16%;
   background-color: firebrick;
