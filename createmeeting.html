@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Log into MeeTy</title>
+    <title>Create MeeTying</title>
     <meta
       name="description"
-      content="Log into your best learning platform - MeeTy"
+      content="Create your best MeeTying, choose your favorite hour and meet with others"
     />
     <meta name="author" content="Szymon Stolarek, Piotr Malec" />
     <meta name="keywords" content="nauka, spotkania, studia" />
@@ -59,7 +59,8 @@
     <!-- Pierw bootstrap potem styl zeby nie nadpisac stulu -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="login.css" type="text/css" />
+    <link rel="icon" href="http://example.com/favicon.png" />
+    <link rel="stylesheet" href="createmeeting.css" type="text/css" />
   </head>
 
   <body>
@@ -85,13 +86,13 @@
               <a href="index.html" class="nav-item nav-link">Home</a>
               <div class="nav-item dropdown">
                 <a
-                  href="#"
+                  href="joinmeetings.html"
                   class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   >Meetings</a
                 >
                 <div class="dropdown-menu m-0 bg-primary">
-                  <a href="createmeeting.html" class="dropdown-item"
+                  <a href="createmeeting.html" class="dropdown-item active"
                     >Create meeting</a
                   >
                   <a href="joinmeeting.html" class="dropdown-item"
@@ -121,7 +122,7 @@
                 >
                 <div class="dropdown-menu m-0 bg-primary">
                   <a href="abMeeTy.html" class="dropdown-item">About MeeTy</a>
-                  <a href="abcoauthirs.html" class="dropdown-item"
+                  <a href="abcoauthors.html" class="dropdown-item"
                     >About Cocreators</a
                   >
                 </div>
@@ -132,78 +133,21 @@
       </div>
     </div>
     <!-- End of navbar -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 
-    <!--  Login module  -->
-    <form class="login">
-      <!-- Email input -->
-      <div class="form-outline mb-4">
-        <input type="email" id="form2Example1" class="form-control" />
-        <label class="form-label" for="form2Example1">Email address</label>
-      </div>
+    <div class="container-fluid">
+      <aside class="left-side">lewy</aside>
 
-      <!-- Password input -->
-      <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
-        <label class="form-label" for="form2Example2">Password</label>
-      </div>
+      <article class="content">
+        <h1>Welcome on Meety!!</h1>
+      </article>
 
-      <!-- 2 column grid layout for inline styling -->
-      <div class="row mb-4">
-        <div class="col d-flex justify-content-center">
-          <!-- Checkbox -->
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="form2Example31"
-              checked
-            />
-            <label class="form-check-label" for="form2Example31">
-              Remember me
-            </label>
-          </div>
-        </div>
+      <aside class="right-side">
+        prawy
+        <script src="clock.js"></script>
+      </aside>
+      <div class="clear-both"></div>
 
-        <div class="col">
-          <!-- Simple link -->
-          <a href="#!">Forgot password?</a>
-        </div>
-      </div>
-
-      <!-- Submit button -->
-      <div class="loginbutton">
-        <button type="button" class="btn btn-primary btn-block mb-4">
-          Log in
-        </button>
-      </div>
-
-      <!-- Register buttons -->
-      <div class="text-center">
-        <p>Not a member? <a href="registration.html">Register</a></p>
-        <!--------------------------------------- CHANGE LATER --------------------------------------->
-        <p>or sign up with:</p>
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-google"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-github"></i>
-        </button>
-      </div>
-    </form>
+      <footer class="footer">footer</footer>
+    </div>
   </body>
 </html>

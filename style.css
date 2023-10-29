@@ -30,8 +30,16 @@ body
   display: 1;
   float: left;
   width: 68%;
-  background-color: blueviolet;
-  
+}
+
+.portfolio{
+  float: left;
+}
+
+
+.responsive-picture{
+  width: auto;
+  height: auto;
 }
 
 .right-side
@@ -46,10 +54,13 @@ body
 .footer
 {
   clear: both;
+  text-align: center;
   width: 100%;
-  background-color: azure;
 }
 
+.footer-icons{
+  color: whitesmoke;
+}
 /*----------------------------------------------------------------
 /*** Spinner Start ***/
 #spinner {
