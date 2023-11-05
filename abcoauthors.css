@@ -1,0 +1,30 @@
+.portfolio {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.responsive-picture {
+  margin: 0%;
+  padding: 0%;
+  max-width: 20%;
+  width: auto;
+  height: auto;
+}
+.left {
+  float: left;
+}
+.right {
+  clear: both;
+}
+.part {
+}
+.article-paragraph {
+  text-indent: 10%;
+}
+.image {
+  float: left;
+  margin: 0%;
+
+  max-height: 800px;
+}
