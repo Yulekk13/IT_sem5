@@ -1,10 +1,9 @@
-body 
-{
+body {
   margin: 0 !important;
   background-color: #444949;
   color: #efefef;
   font-size: 17px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container-fluid {
@@ -16,70 +15,62 @@ body
   flex-wrap: wrap;
 }
 
-
-.left-side
-{
+.left-side {
   display: 1;
   float: left;
   width: 16%;
   background-color: aqua;
 }
 
-.content
-{
+.content {
   display: 1;
   float: left;
   width: 64%;
   margin: 2%;
 }
 
-.portfolio{
+.portfolio {
   float: left;
 }
 
-
-.responsive-picture{
+.responsive-picture {
   width: auto;
   height: auto;
 }
 
-.right-side
-{
+.right-side {
   display: 1;
   float: left;
   width: 16%;
   background-color: firebrick;
-  
 }
 
-.footer
-{
+.footer {
   clear: both;
   text-align: center;
   width: 100%;
 }
 
-.footer-icons{
+.footer-icons {
   color: whitesmoke;
 }
 
 .link {
-  color:aliceblue;
+  color: aliceblue;
   text-decoration: none;
 }
-
 
 /*----------------------------------------------------------------
 /*** Spinner Start ***/
 #spinner {
   opacity: 0;
   visibility: hidden;
-  transition: opacity .8s ease-out, visibility 0s linear .5s;
+  transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
   z-index: 99999;
 }
 
 #spinner.show {
-  transition: opacity .8s ease-out, visibility 0s linear .0s;
+  transition: opacity 0.8s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -101,7 +92,6 @@ body
   z-index: 99;
 }
 
-
 .navbar .navbar-nav {
   padding: 15px 0;
 }
@@ -112,13 +102,13 @@ body
   font-weight: 500;
   font-size: 16px;
   outline: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
   color: var(--bs-primary);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .navbar .dropdown-toggle::after {
@@ -137,7 +127,7 @@ body
     top: 100%;
     transform: rotateX(-75deg);
     transform-origin: 0% 0%;
-    transition: .5s;
+    transition: 0.5s;
     opacity: 0;
   }
 }
@@ -151,7 +141,7 @@ body
 .navbar .nav-item:hover .dropdown-menu {
   transform: rotateX(0deg);
   visibility: visible;
-  transition: .5s;
+  transition: 0.5s;
   opacity: 1;
 }
 
@@ -211,4 +201,9 @@ body
   opacity: 0.8;
 }
 /*** End of clock ***/
-/*----------------------------------------------------------------
+/* error - registration */
+.error {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -11,44 +11,47 @@
 			$all_OK=false;
 			$_SESSION['e_name']="Name must be between 3 and 20 characters long!";
 		}
+		if($all_OK==true)
+    {
+      echo "zajebiscie";
+    }
+		// if (ctype_alnum($name)==false)
+		// {
+		// 	$all_OK=false;
+		// 	$_SESSION['e_name']="Name can only consist of letters and numbers (no Polish characters)!";
+		// }
 		
-		if (ctype_alnum($name)==false)
-		{
-			$all_OK=false;
-			$_SESSION['e_name']="Name can only consist of letters and numbers (no Polish characters)!";
-		}
+		// $email = $_POST['email'];
+		// $emailB = filter_var($email, FILTER_SANITIZE_EMAIL);
 		
-		$email = $_POST['email'];
-		$emailB = filter_var($email, FILTER_SANITIZE_EMAIL);
+		// if ((filter_var($emailB, FILTER_VALIDATE_EMAIL)==false) || ($emailB!=$email))
+		// {
+		// 	$all_OK=false;
+		// 	$_SESSION['e_email']="Please enter a valid email address!";
+		// }
 		
-		if ((filter_var($emailB, FILTER_VALIDATE_EMAIL)==false) || ($emailB!=$email))
-		{
-			$all_OK=false;
-			$_SESSION['e_email']="Please enter a valid email address!";
-		}
+		// $password1 = $_POST['password1'];
+		// $password2 = $_POST['password2'];
 		
-		$password1 = $_POST['password1'];
-		$password2 = $_POST['password2'];
+		// if ((strlen($password1)<8) || (strlen($password1)>20))
+		// {
+		// 	$all_OK=false;
+		// 	$_SESSION['e_password']="The password must be between 8 and 20 characters long!";
+		// }
 		
-		if ((strlen($password1)<8) || (strlen($password1)>20))
-		{
-			$all_OK=false;
-			$_SESSION['e_password']="The password must be between 8 and 20 characters long!";
-		}
-		
-		if ($password1!=$password2)
-		{
-			$all_OK=false;
-			$_SESSION['e_password']="The passwords provided aren't identical!";
-		}	
+		// if ($password1!=$password2)
+		// {
+		// 	$all_OK=false;
+		// 	$_SESSION['e_password']="The passwords provided aren't identical!";
+		// }	
 
-		$password_hash = password_hash($password1, PASSWORD_DEFAULT);
+		// $password_hash = password_hash($password1, PASSWORD_DEFAULT);
 		
-		if (!isset($_POST['terms']))
-		{
-			$all_OK=false;
-			$_SESSION['e_terms']="Accept the terms";
-		}				
+		// if (!isset($_POST['terms']))
+		// {
+		// 	$all_OK=false;
+		// 	$_SESSION['e_terms']="Accept the terms";
+		// }				
   }
 ?>
 <!DOCTYPE html>
@@ -147,6 +150,13 @@
     <!--  Registration module  -->
     <form method = "post" class="registration">
       <!--  Name input  -->
+      <?php
+			if (isset($_SESSION['e_name']))
+			{
+				echo '<div class="error">'.$_SESSION['e_name'].'</div>';
+				unset($_SESSION['e_name']);
+			}
+		  ?>
       <div class="form-outline mb-4">
         <input type="text" id="form2Example1" class="form-control" />
         <label class="form-label" for="form2Example1">Your Name</label>
