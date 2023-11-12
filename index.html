@@ -58,6 +58,14 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/date.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/15e74cbad5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap -->
     <!-- Pierw bootstrap potem styl zeby nie nadpisac stulu -->
@@ -153,7 +161,7 @@
     <!-- End of navbar -->
 
     <div class="container-fluid">
-      <aside class="left-side">lewy</aside>
+      <aside class="left-side"></aside>
 
       <article class="content">
         <br />
@@ -206,11 +214,38 @@
       </article>
 
       <aside class="right-side">
-        prawy
-        <script src="clock.js"></script>
+        <div id="date">
+          <span id="day"></span>
+          <span>/</span>
+          <span id="month"></span>
+          <span>/</span>
+          <span id="year"></span>
+        </div>
+        <div class="clock">
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
       </aside>
-
-      <footer class="footer">footer</footer>
     </div>
+
+    <footer class="footer bg-dark">
+      <br />
+      <a
+        class="footer-icons"
+        href="https://discord.gg/EXfgpQDSum"
+        target="_blank"
+      >
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <br />
+      <i class="fa-regular fa-copyright"></i> 2023 The MeeTy Team. All rights
+      reserved.
+      <br />
+      <br />
+      <br />
+    </footer>
   </body>
 </html>
