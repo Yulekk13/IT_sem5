@@ -41,7 +41,6 @@ body {
 .right-side {
   display: 1;
   width: 16%;
-  background-color: firebrick;
   background-color: #121237;
   align-items: center;
 }
@@ -62,37 +61,7 @@ body {
 }
 
 /*----------------------------------------------------------------
-/*** Spinner Start ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity 0.8s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
-/*** Spinner End ***/
-/*----------------------------------------------------------------
-
-/*----------------------------------------------------------------
 /*** Navbar Start ***/
-.back-to-top {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  display: flex;
-  width: 58px;
-  height: 58px;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
-}
-
 .navbar .navbar-nav {
   padding: 15px 0;
 }
@@ -179,6 +148,7 @@ body {
   align-items: center;
 }
 /*** End of clock ***/
+
 /* error - registration */
 .error {
   color: red;
