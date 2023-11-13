@@ -1,5 +1,4 @@
 <?php
-
 	session_start();
 	
 	if ((!isset($_POST['email'])) || (!isset($_POST['password'])))
@@ -9,45 +8,65 @@
 	}
 
 	require_once "connect.php";
-
-	$connection = @new mysqli($host, $db_user, $db_password, $db_name);
-	
-	if ($connection->connect_errno!=0)
+	mysqli_report(MYSQLI_REPORT_STRICT);
+		
+	try 
 	{
-		echo "Error: ".$connection->connect_errno;
-	}
-	else
-	{
-		$email = $_POST['email'];
-		$password = $_POST['password'];
-
-	
-        $email = htmlentities($email, ENT_QUOTES, "UTF-8");
-		$password = htmlentities($password, ENT_QUOTES, "UTF-8");
-	
-		if ($result = @$connection->query(
-        sprintf("SELECT * FROM users WHERE email='%s' AND pass='%s'",
-		mysqli_real_escape_string($connection,$email),
-		mysqli_real_escape_string($connection,$password))))
+		$connection = new mysqli($host, $db_user, $db_password, $db_name);
+		
+		if ($connection->connect_errno!=0)
 		{
-			$num_users = $result->num_rows;
-			if($num_users>0)
+			throw new Exception(mysqli_connect_errno());
+		}
+		else
+		{
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+			
+			$email = htmlentities($email, ENT_QUOTES, "UTF-8");
+		
+			if ($result = $connection->query(
+			sprintf("SELECT * FROM users WHERE user='%s'",
+			mysqli_real_escape_string($connection,$email))))
 			{
-				$_SESSION['email'] = true;
-				unset($_SESSION['error']);
-				$result->free_result();
-				// header('Location: login.php');
+				$num_user = $result->num_rows;
+				if($num_user>0)
+				{
+					$row = $result->fetch_assoc();
+					
+					if (password_verify($password, $row['pass']))
+					{
+						$_SESSION['email'] = true;
+						
+						unset($_SESSION['error']);
+						$result->free_result();
+						// header('Location: login.php');
+					}
+					else 
+					{
+						$_SESSION['error'] = '<span style="color:red">Incorrect email address or password!</span>';
+						header('Location: login.php');
+					}
+					
+				} else {
+					
+					$_SESSION['error'] = '<span style="color:red">Incorrect email address or password!</span>';
+					header('Location: login.php');
+					
+				}
 				
-			} 
-            else 
-            {
-				$_SESSION['error'] = '<span style="color:red">Incorrect email address or password!</span>';
-				header('Location: login.php');
+			}
+			else
+			{
+				throw new Exception($connection->error);
 			}
 			
+			$connection->close();
 		}
-		
-		$connection->close();
 	}
-	
+	catch(Exception $e)
+	{
+		echo '<span style="color:red;">Server error! We apologize for the inconvenience and ask you to register at another time!</span>';
+		echo '<br />Dev info: '.$e;
+	}
 ?>

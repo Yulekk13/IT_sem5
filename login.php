@@ -139,7 +139,7 @@
 
       <!-- Register buttons -->
       <div class="text-center">
-        <p>Not a member? <a href="registration.html">Register</a></p>
+        <p>Not a member? <a href="registration.php">Register</a></p>
         <!--------------------------------------- CHANGE LATER --------------------------------------->
         <p>or sign up with:</p>
         <button type="button" class="btn btn-link btn-floating mx-1">

@@ -148,10 +148,3 @@ body {
   align-items: center;
 }
 /*** End of clock ***/
-
-/* error - registration */
-.error {
-  color: red;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
