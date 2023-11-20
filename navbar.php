@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <div class="container-fluid bg-dark">
   <div class="container">
     <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
@@ -35,13 +38,22 @@
         </div>
       </div>
       <div class="menu">
-        <button type="button" class="btn btn-primary btn-sm bg-primary w-40">
-          <a href="login.php" class="link">Log in</a>
-        </button>
+        <?php
+          if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+              echo '<button type="button" class="btn btn-primary btn-sm bg-primary w-40">
+                        <a href="logout.php" class="link">Log out</a>
+                    </button>';
+          } 
+          else {
+              echo '<button type="button" class="btn btn-primary btn-sm bg-primary w-40">
+                        <a href="login.php" class="link">Log in</a>
+                    </button>
 
-        <button type="button" class="btn btn-primary btn-sm bg-primary w-40">
-          <a href="registration.php" class="link">Sign Up</a>
-        </button>
+                    <button type="button" class="btn btn-primary btn-sm bg-primary w-40">
+                        <a href="registration.php" class="link">Sign Up</a>
+                    </button>';
+          }
+        ?>
       </div>
     </nav>
   </div>

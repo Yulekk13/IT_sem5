@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	
+
 	if ((!isset($_POST['email'])) || (!isset($_POST['password'])))
 	{
 		header('Location: login.php');
@@ -36,8 +36,7 @@
 					
 					if (password_verify($password, $row['pass']))
 					{
-						$_SESSION['email'] = true;
-						
+						$_SESSION['loggedin'] = true;
 						unset($_SESSION['error']);
 						$result->free_result();
 						header('Location: index.php');
@@ -49,8 +48,6 @@
 					}
 					
 				} else {
-					
-					echo "hahha";
 					$_SESSION['error'] = '<span style="color:red">Incorrect email address or password!</span>';
 					header('Location: login.php');
 					

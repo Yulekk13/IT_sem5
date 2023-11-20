@@ -1,7 +1,3 @@
-<?php
-  session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +28,7 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.html'; ?>
+    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
     <br />
     <br />

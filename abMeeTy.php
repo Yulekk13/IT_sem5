@@ -34,7 +34,7 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.html'; ?>
+    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
     <div class="container-fluid">

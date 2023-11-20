@@ -1,6 +1,4 @@
 <?php
-  session_start();
-  
   if (isset($_POST['email'])) {
       $all_OK = true;
   
@@ -145,7 +143,7 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.html'; ?>
+    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
     <br />
     <br />
