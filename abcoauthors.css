@@ -11,30 +11,18 @@
   width: auto;
   height: auto;
 }
-.left {
-  float: left;
-}
-.right {
-  clear: both;
-}
 .part {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 2px;
 }
 .image {
-  max-height: 800px;
+  align-self: center;
+  flex: 0.33%;
 }
-.content {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-.description1 {
-  flex: 1;
-}
-.description2 {
-  text-align: center;
+.description {
+  flex: 100%;
+  max-width: 60%;
 }
