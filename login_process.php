@@ -26,7 +26,7 @@
 			$email = htmlentities($email, ENT_QUOTES, "UTF-8");
 		
 			if ($result = $connection->query(
-			sprintf("SELECT * FROM users WHERE user='%s'",
+			sprintf("SELECT * FROM users WHERE email='%s'",
 			mysqli_real_escape_string($connection,$email))))
 			{
 				$num_user = $result->num_rows;
@@ -40,7 +40,7 @@
 						
 						unset($_SESSION['error']);
 						$result->free_result();
-						// header('Location: login.php');
+						header('Location: index.php');
 					}
 					else 
 					{
@@ -50,6 +50,7 @@
 					
 				} else {
 					
+					echo "hahha";
 					$_SESSION['error'] = '<span style="color:red">Incorrect email address or password!</span>';
 					header('Location: login.php');
 					
