@@ -12,20 +12,14 @@
       </button>
       <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
-          <a href="index.php" class="nav-item nav-link active">Home</a>
-          <div class="nav-item dropdown">
-            <a href="joinmeetings.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Meetings</a>
-            <div class="dropdown-menu m-0 bg-primary">
-              <a href="createmeeting.html" class="dropdown-item">Create meeting</a>
-              <a href="joinmeeting.html" class="dropdown-item">Join meeting</a>
-            </div>
-          </div>
+          <a href="index.php" class="nav-item nav-link">Home</a>
+          <a href="meetings.php" class="nav-item nav-link">MeeTyings</a>
           <a href="blog.html" class="nav-item nav-link">Advices</a>
           <div class="nav-item dropdown">
             <a href="materials.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learning Materials</a>
             <div class="dropdown-menu m-0 bg-primary">
-              <a href="#" class="dropdown-item">Learning Methods</a>
-              <a href="#" class="dropdown-item">C++</a>
+              <a href="#" class="dropdown-item" disabled>Learning Methods</a>
+              <a href="#" class="dropdown-item" disabled>C++</a>
             </div>
           </div>
           <div class="nav-item dropdown">
