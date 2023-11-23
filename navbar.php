@@ -14,7 +14,6 @@
         <div class="navbar-nav ms-auto">
           <a href="index.php" class="nav-item nav-link">Home</a>
           <a href="meetings.php" class="nav-item nav-link">MeeTyings</a>
-          <a href="blog.html" class="nav-item nav-link">Advices</a>
           <div class="nav-item dropdown">
             <a href="materials.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learning Materials</a>
             <div class="dropdown-menu m-0 bg-primary">
