@@ -23,10 +23,10 @@
             </div>
           </div>
           <div class="nav-item dropdown">
-            <a href="abMeeTy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+            <a href="abMeeTy.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
             <div class="dropdown-menu m-0 bg-primary">
-              <a href="abMeeTy.html" class="dropdown-item">About MeeTy</a>
-              <a href="abcoauthors.html" class="dropdown-item">About Cocreators</a>
+              <a href="abMeeTy.php" class="dropdown-item">About MeeTy</a>
+              <a href="abcoauthors.php" class="dropdown-item">About Cocreators</a>
             </div>
           </div>
         </div>
