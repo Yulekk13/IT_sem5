@@ -37,48 +37,49 @@
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
-    <div class="container-fluid">
+    <div class="container-fluid d-flex flex-row min-vh-100">
       <aside class="left-side">lewy</aside>
 
-      <article class="content">
-        <div class="container">
+      <div class="content">
+        <article class="content">
+          <div class="container">
 
-          <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-      <fieldset>
-      
-      <!-- Form Name -->
-      <legend>Create you MeeTying!</legend>
-      
-      <!-- Name -->
-      <div class="form-group">
-        <label class="col-md-4 control-label">Name your MeeTying:</label>  
-        <div class="col-md-4 inputGroupContainer">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="name" placeholder="Enter intresting name" class="form-control"  type="text">
+           <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+       <fieldset>
+
+        <!-- Form Name -->
+       <legend>Create you MeeTying!</legend>
+  
+       <!-- Name -->
+       <div class="form-group">
+         <label class="col-md-4 control-label">Name your MeeTying:</label>  
+         <div class="col-md-4 inputGroupContainer">
+           <div class="input-group">
+             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+             <input  name="name" placeholder="Enter intresting name" class="form-control"  type="text">
+           </div>
           </div>
-        </div>
-      </div>
-
+       </div>
+      
       <!-- Subject Name -->
       <div class="form-group"> 
         <label class="col-md-4 control-label">Subject:</label>
           <div class="col-md-4 selectContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-          <select name="state" class="form-control selectpicker" >
-            <option value="disabled" >Choose subject from the list</option>
-            <option>Dynamics</option>
-            <option>Automatics</option>
-            <option >Mathematics</option>
-            <option >Physics</option>
-            <option >Algebra</option>
-            <option >Programming</option>
-            <option >Robotics</option>
-            <option >Operating systems</option>
-          </select>
+            <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="state" class="form-control selectpicker" >
+             <option value="disabled" >Choose subject from the list</option>
+             <option>Dynamics</option>
+             <option>Automatics</option>
+             <option >Mathematics</option>
+             <option >Physics</option>
+             <option >Algebra</option>
+              <option >Programming</option>
+              <option >Robotics</option>
+              <option >Operating systems</option>
+            </select>
+          </div>
         </div>
-      </div>
       </div>
       
       <!-- Date -->
@@ -107,29 +108,12 @@
       <div class="form-group">
         <label class="col-md-4 control-label">Describe your class</label>
           <div class="col-md-4 inputGroupContainer">
-          <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                <textarea class="form-control" name="comment" placeholder="MeeTying Description"></textarea>
-        </div>
+           <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                 <textarea class="form-control" name="comment" placeholder="MeeTying Description"></textarea>
+         </div>
         </div>
       </div>
-      
-      <!-- Agreement -->
-       <div class="form-group">
-                              <label class="col-md-4 control-label">Agree with company policy:</label>
-                              <div class="col-md-4">
-                                  <div class="radio">
-                                      <label>
-                                          <input type="radio" name="hosting" value="yes" /> Yes
-                                      </label>
-                                  </div>
-                                  <div class="radio">
-                                      <label>
-                                          <input type="radio" name="hosting" value="no" /> No
-                                      </label>
-                                  </div>
-                              </div>
-                          </div>
       
       <!-- Button -->
       <div class="form-group">
@@ -139,13 +123,29 @@
         </div>
       </div>
       
-      </fieldset>
-      </form>
       </div>
-          </div><!-- /.container -->
-      </article>
 
-      <aside class="right-side">prawy</aside>
+      <!-- Right side Start -->
+      <aside class="right-side">
+        <div class="date">
+          DATE: <br />
+          <span id="day"></span>
+          <span>.</span>
+          <span id="month"></span>
+          <span>.</span>
+          <span id="year"></span>
+        </div>
+        <div class="clock">
+          TIME: <br />
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+      </aside>
+    </div>
+    <!-- Right side End -->
       <div class="clear-both"></div>
 
       <footer class="footer bg-dark">

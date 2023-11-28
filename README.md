@@ -11,5 +11,8 @@ https://fontello.com/
 Wybór kolorów do htmla:
 https://htmlcolorcodes.com/
 
-Clock:
+Analog clock:
 https://www.geeksforgeeks.org/how-to-create-analog-clock-using-html-css-and-javascript/
+
+Digital clock:
+https://codepen.io/afarrar/pen/JRaEjP
