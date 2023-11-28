@@ -15,10 +15,10 @@
           <a href="index.php" class="nav-item nav-link">Home</a>
           <a href="meetings.php" class="nav-item nav-link">MeeTyings</a>
           <div class="nav-item dropdown">
-            <a href="materials.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learning Materials</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learning Materials</a>
             <div class="dropdown-menu m-0 bg-primary">
-              <a href="#" class="dropdown-item" disabled>Learning Methods</a>
-              <a href="#" class="dropdown-item" disabled>C++</a>
+              <a href="methods.php" class="dropdown-item" disabled>Learning Methods</a>
+              <a href="cpp.php" class="dropdown-item" disabled>C++</a>
             </div>
           </div>
           <div class="nav-item dropdown">

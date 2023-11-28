@@ -38,7 +38,7 @@
     <!-- End of navbar -->
 
     <div class="container-fluid">
-      <aside class="left-side">lewy</aside>
+      <aside class="left-side"></aside>
 
       <article class="content">
         <br />
@@ -148,7 +148,24 @@
         </div>
       </article>
 
-      <aside class="right-side">prawy</aside>
+      <aside class="right-side">
+      <div class="date">
+          DATE: <br />
+          <span id="day"></span>
+          <span>.</span>
+          <span id="month"></span>
+          <span>.</span>
+          <span id="year"></span>
+        </div>
+        <div class="clock">
+          TIME: <br />
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+      </aside>
       <div class="clear-both"></div>
 
       <footer class="footer bg-dark">
