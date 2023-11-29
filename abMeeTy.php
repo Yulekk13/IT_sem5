@@ -37,13 +37,13 @@
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
-    <div class="container-fluid">
-      <aside class="left-side">lewy</aside>
+    <div class="container-fluid d-flex flex-row min-vh-100">
+      <!-- Left side Start -->
+      <?php include 'left.php'; ?>
+      <!-- Left side End -->
 
       <article class="content">
-        <br />
 
-        <br />
         <div class="article-metadata article-class">
           <center>
             <img src="pictures/MeeTy.jpg" class="responsive-picture" />
@@ -148,24 +148,14 @@
         </div>
       </article>
 
-      <aside class="right-side">prawy</aside>
-      <div class="clear-both"></div>
-
-      <footer class="footer bg-dark">
-        <br />
-        <a
-          class="footer-icons"
-          href="https://discord.gg/EXfgpQDSum"
-          target="_blank"
-        >
-          <i class="fa-brands fa-discord"></i>
-        </a>
-        <br />
-        <i class="fa-regular fa-copyright"></i> 2023 The MeeTy Team. All rights
-        reserved.
-        <br />
-        <br />
-      </footer>
+      <!-- Right side Start -->
+      <?php include 'right.php'; ?>
+      <!-- Right side End -->
+      
+    </div>
+    <!-- Footer Start -->
+    <?php include 'footer.php'; ?>
+    <!-- Footer End -->
     </div>
   </body>
 </html>
