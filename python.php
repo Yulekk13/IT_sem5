@@ -30,7 +30,7 @@
         <!-- Left side End -->
 
         <!-- Main content Start -->
-      <article class="content m-2">
+      <article class="content px-5">
         <center>
           <h3>Wecome to Python Guide! 🐍</h3>
         </center>
@@ -45,6 +45,7 @@
 
         <p>🌐 As you embark on this adventure, know that our commitment to your learning doesn't stop here. While this course is tailored for beginners, we understand that the journey doesn't end with the basics. Stay tuned for future content that will guide you through more advanced concepts, ensuring your growth and relevance in the dynamic world of Python programming. 🚀</p>
               
+        <p>🚧 And stay tuned! As the Python ecosystem evolves, so will our course. We're committed to keeping you up-to-date with the latest advancements, ensuring that your learning journey continues to be exciting and relevant in the ever-changing landscape of technology. The future holds even more thrilling content and possibilities, so buckle up for an enriching ride into the world of Python! 🌟</p>
       </article>
       <!-- Main content End -->
 
