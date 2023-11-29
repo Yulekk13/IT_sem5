@@ -30,10 +30,21 @@
         <!-- Left side End -->
 
         <!-- Main content Start -->
-      <article class="content">
-        
+      <article class="content m-2">
+        <center>
+          <h3>Wecome to Python Guide! 🐍</h3>
+        </center>
+        <br>
+        <p>🎓 Welcome to the exciting world of Python programming, designed specifically for beginners! Whether you're taking your first steps into the world of coding or exploring a new language, this Python learning course is crafted to be your perfect starting point.</p>
 
-      
+        <p>🚀 Python's simplicity and readability make it an ideal choice for those embarking on their coding journey. Throughout this course, we'll guide you through the fundamental concepts of Python, unravel its syntax, and help you understand how to leverage its vast ecosystem of libraries and frameworks.</p>
+
+        <p>🔍 From the basics of variables and control structures to more advanced topics like object-oriented programming and handling data structures, we've got you covered. This course is not just about learning the syntax; it's about empowering you to think like a programmer, solve problems efficiently, and express your ideas through clean and effective code.</p>
+
+        <p>💻 Get ready for hands-on projects, interactive exercises, and the confidence to write Python code for real-world applications. No matter your background or experience level, this beginner-friendly Python learning journey is designed to be inclusive and rewarding.</p>
+
+        <p>🌐 As you embark on this adventure, know that our commitment to your learning doesn't stop here. While this course is tailored for beginners, we understand that the journey doesn't end with the basics. Stay tuned for future content that will guide you through more advanced concepts, ensuring your growth and relevance in the dynamic world of Python programming. 🚀</p>
+              
       </article>
       <!-- Main content End -->
 

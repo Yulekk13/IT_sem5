@@ -1,3 +1,11 @@
+<?php
+
+  require_once 'config/db.php';
+  require_once 'config/functions.php';
+  $result = display_data();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,7 +57,7 @@
         <!-- Form Start -->
         <div class="form-meeting">
 
-          <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+          <form class="well form-horizontal" action="addmeeting.php" method="post"  id="contact_form">
             <fieldset>
 
               <!-- Form Name -->
@@ -61,7 +69,7 @@
                 <div class="col-md-4 inputGroupContainer">
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa-regular fa-comments"></i></span>
-                    <input  name="name" placeholder="Enter intresting name" class="form-control"  type="text">
+                    <input  name="Name" placeholder="Enter intresting name" class="form-control"  type="text">
                   </div>
                 </div>
               </div>
@@ -72,7 +80,7 @@
               <div class="col-md-4 selectContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-solid fa-graduation-cap"></i></span>
-              <select name="state" class="form-control selectpicker" >
+              <select name="Subject" class="form-control selectpicker" >
               <option value="disabled" >Choose subject from the list</option>
               <option>Dynamics</option>
               <option>Automatics</option>
@@ -93,7 +101,7 @@
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-solid fa-calendar-days"></i></span>
-              <input type="date" name="date" placeholder="DD.MM.YYYY" class="form-control" type="text">
+              <input type="Date" name="date" placeholder="DD.MM.YYYY" class="form-control" type="text">
               </div>
               </div>
               </div>
@@ -104,7 +112,7 @@
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-regular fa-clock"></i></span>
-              <input type= "time" name="time" placeholder="00:00" class="form-control" type="text">
+              <input type= "Time" name="time" placeholder="00:00" class="form-control" type="text">
               </div>
               </div>
               </div>
@@ -115,7 +123,7 @@
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-regular fa-comment"></i></i></span>
-              <textarea class="form-control" name="comment" placeholder="MeeTying Description"></textarea>
+              <textarea class="form-control" name="Description" placeholder="MeeTying Description"></textarea>
               </div>
               </div>
               </div>
@@ -133,9 +141,43 @@
         </div>
         <!-- Form End -->
 
-        <div class="meeting">
+        <!-- Displeying Meetings> -->
+        <div class="display-meeting">
+          <div class="title text-center mt-2 md-2 bg-primary border border-dark">
+            <h3>Future MeeTyings</h3>
+          </div>
           
+          <div class="meeting">
+            <table class="table table-border table-secondary text-center">
+              <tr class="bg-dark text-white border border-dark">
+                <td> Name </td>
+                <td> Subject </td>
+                <td> Date </td>
+                <td> Time </td>
+                <td> Description </td>
+              </tr>
+              <tr>
+                <?php
+
+                  while($row = mysqli_fetch_assoc($result))
+                  {
+                    ?>
+                    <td><?php echo $row['Name'] ?></td>
+                    <td><?php echo $row['Subject'] ?></td>
+                    <td><?php echo $row['Date'] ?></td>
+                    <td><?php echo $row['Time'] ?></td>
+                    <td><?php echo $row['Description'] ?></td>
+                    </tr>
+                    <?php
+                  }
+                  
+                ?>
+              
+            </table>
+          </div>
+
         </div>
+        
 
       </div>
 

@@ -21,7 +21,6 @@
 
   <body>
     <!-- Navbar Start -->
-    <!-- <header-component></header-component> -->
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
@@ -84,7 +83,6 @@
 
     </div>
     <!-- Footer Start -->
-    <!-- <footer-component></footer-component> -->
     <?php include 'footer.php'; ?>
     <!-- Footer End -->
   </body>
