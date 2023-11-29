@@ -25,9 +25,9 @@
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
-    <div class="container-fluid">
+    <div class="container-fluid d-flex flex-row min-vh-100">
       <!-- Left side Start -->
-      <aside class="left-side"></aside>
+      <?php include 'left.php'; ?>
       <!-- Left side End -->
 
       <!-- Main content Start -->
@@ -79,45 +79,13 @@
       <!-- Main content End -->
 
       <!-- Right side Start -->
-      <aside class="right-side">
-        <div class="date">
-          DATE: <br />
-          <span id="day"></span>
-          <span>.</span>
-          <span id="month"></span>
-          <span>.</span>
-          <span id="year"></span>
-        </div>
-        <div class="clock">
-          TIME: <br />
-          <span id="hours">00</span>
-          <span>:</span>
-          <span id="minutes">00</span>
-          <span>:</span>
-          <span id="seconds">00</span>
-        </div>
-      </aside>
-    </div>
-    <!-- Right side End -->
+      <?php include 'right.php'; ?>
+      <!-- Right side End -->
 
+    </div>
     <!-- Footer Start -->
     <!-- <footer-component></footer-component> -->
-    <footer class="footer bg-dark">
-      <br />
-      <a
-        class="footer-icons"
-        href="https://discord.gg/EXfgpQDSum"
-        target="_blank"
-      >
-        <i class="fa-brands fa-discord"></i>
-      </a>
-      <br />
-      <i class="fa-regular fa-copyright"></i> 2023 The MeeTy Team. All rights
-      reserved.
-      <br />
-      <br />
-      <br />
-    </footer>
+    <?php include 'footer.php'; ?>
     <!-- Footer End -->
   </body>
 </html>

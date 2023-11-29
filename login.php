@@ -30,74 +30,84 @@
     <!-- Navbar Start -->
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <div class="container-fluid d-flex flex-row min-vh-100">
+      <!-- Left side Start -->
+      <?php include 'left.php'; ?>
+      <!-- Left side End -->
 
-    <!--  Login module  -->
-    <form class="login" action="login_process.php" method="post">
-      <?php
-        if(isset($_SESSION['error'])) 
-        {
-          echo $_SESSION['error'];
-        }
-      ?>
-      <!-- Email input -->
-      <div class="form-outline mb-4">
-        <input type="email" name="email" id="form2Example1" class="form-control" />
-        <label class="form-label" for="form2Example1">Email address</label>
-      </div>
+      <!--  Login module  -->
+      <form class="login" action="login_process.php" method="post">
+        <?php
+          if(isset($_SESSION['error'])) 
+          {
+            echo $_SESSION['error'];
+          }
+        ?>
 
-      <!-- Password input -->
-      <div class="form-outline mb-4">
-        <input type="password" name="password" id="form2Example2" class="form-control" />
-        <label class="form-label" for="form2Example2">Password</label>
-      </div>
+        <h1 class="text-center"> Log In to Your MeeTy account!</h1>
 
-      <!-- 2 column grid layout for inline styling -->
-      <div class="row mb-4">
-        <div class="col d-flex justify-content-center">
-          <!-- Checkbox -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-            <label class="form-check-label" for="form2Example31"> Remember me </label>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" name="email" id="form2Example1" class="form-control" />
+          <label class="form-label" for="form2Example1">Email address</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" name="password" id="form2Example2" class="form-control" />
+          <label class="form-label" for="form2Example2">Password</label>
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
           </div>
         </div>
 
-        <div class="col">
-          <!-- Simple link -->
-          <a href="#!">Forgot password?</a>
+        <!-- Submit button -->
+        <div class="loginbutton text-center">
+          <button type="submit" class="btn btn-primary btn-block mb-4">Log in</button>
         </div>
-      </div>
 
-      <!-- Submit button -->
-      <div class="loginbutton">
-        <button type="submit" class="btn btn-primary btn-block mb-4">Log in</button>
-      </div>
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="registration.php">Register</a></p>
+          <!--------------------------------------- CHANGE LATER --------------------------------------->
+          <p>or sign up with:</p>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
 
-      <!-- Register buttons -->
-      <div class="text-center">
-        <p>Not a member? <a href="registration.php">Register</a></p>
-        <!--------------------------------------- CHANGE LATER --------------------------------------->
-        <p>or sign up with:</p>
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-facebook-f"></i>
-        </button>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
 
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-google"></i>
-        </button>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
 
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-github"></i>
-        </button>
-      </div>
-    </form>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </form>
+      <!-- Right side Start -->
+      <?php include 'right.php'; ?>
+      <!-- Right side End -->
+    </div>
+    <!-- Footer Start -->
+    <?php include 'footer.php'; ?>
+    <!-- Footer End -->
+    
   </body>
 </html>

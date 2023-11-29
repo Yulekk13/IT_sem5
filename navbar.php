@@ -19,6 +19,7 @@
             <div class="dropdown-menu m-0 bg-primary">
               <a href="methods.php" class="dropdown-item" disabled>Learning Methods</a>
               <a href="cpp.php" class="dropdown-item" disabled>C++</a>
+              <a href="python.php" class="dropdown-item" disabled>Python</a>
             </div>
           </div>
           <div class="nav-item dropdown">

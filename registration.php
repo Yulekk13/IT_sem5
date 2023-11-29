@@ -145,135 +145,149 @@
     <!-- Navbar Start -->
     <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <!--  Registration module  -->
-    <form method = "post" class="registration">
-      <!--  Name input  -->
+    <div class="container-fluid d-flex flex-row min-vh-100">
+      <!-- Left side Start -->
+      <?php include 'left.php'; ?>
+      <!-- Left side End -->
 
-      <div class="form-outline mb-4">
-        <label class="form-label" for="form2Example1">Your Name</label>
-        <input type="text" id="form2Example1" class="form-control" value="<?php
-          if (isset($_SESSION['fr_name']))
-          {
-            echo $_SESSION['fr_name'];
-            unset($_SESSION['fr_name']);
-          }
-        ?>" name="name" />
+      <div class="content">
+        <h1 class="text-center"> Create Your MeeTy account and join Our Crew!</h1>
 
-        <?php
-          if (isset($_SESSION['e_name']))
-          {
-            echo '<div class="error">'.$_SESSION['e_name'].'</div>';
-            unset($_SESSION['e_name']);
-          }
-        ?>
-      </div>
+        <!--  Registration module  -->
+        <form method = "post" class="registration">
+          <!--  Name input  -->
 
-      <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Your Name</label>
+            <input type="text" id="form2Example1" class="form-control" value="<?php
+              if (isset($_SESSION['fr_name']))
+              {
+                echo $_SESSION['fr_name'];
+                unset($_SESSION['fr_name']);
+              }
+            ?>" name="name" />
 
-      <div class="form-outline mb-4">
-        <label class="form-label" for="form2Example1">Email address</label>
-        <input type="text" id="form2Example1" class="form-control" value="<?php
-          if (isset($_SESSION['fr_email']))
-          {
-            echo $_SESSION['fr_email'];
-            unset($_SESSION['fr_email']);
-          }
-        ?>" name="email" />
-        
-        <?php
-        if (isset($_SESSION['e_email']))
-          {
-            echo '<div class="error">'.$_SESSION['e_email'].'</div>';
-            unset($_SESSION['e_email']);
-          }
-        ?>
-      </div>
-
-      <!-- Password input -->
-      
-      <div class="form-outline mb-4">
-        <label class="form-label" for="form2Example2">Password</label>
-        <input type="password" id="form2Example2" class="form-control" value="<?php
-          if (isset($_SESSION['fr_password1']))
-          {
-            echo $_SESSION['fr_password1'];
-            unset($_SESSION['fr_password1']);
-          }
-        ?>" name="password1" />
-        <?php
-          if (isset($_SESSION['e_password']))
-          {
-            echo '<div class="error">'.$_SESSION['e_password'].'</div>';
-            unset($_SESSION['e_password']);
-          }
-        ?>
-      </div>
-
-      <!-- Repeat password input -->
-      <div class="form-outline mb-4">
-        <label class="form-label" for="form2Example2">Repeat password</label>
-        <input type="password" id="form2Example2" class="form-control" value="<?php
-          if (isset($_SESSION['fr_password2']))
-          {
-            echo $_SESSION['fr_password2'];
-            unset($_SESSION['fr_password2']);
-          }
-        ?>" name="password2"/>
-      </div>
-
-      <!-- 2 column grid layout for inline styling -->
-
-      <?php
-      if (isset($_SESSION['e_terms'])) {
-        echo '<div class="error text-center">'.$_SESSION['e_terms'].'</div>';
-        unset($_SESSION['e_terms']);
-      }
-      ?>
-
-      <div class="row mb-4">
-        <div class="col d-flex justify-content-center">
-          <!-- Checkbox -->
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="form2Example31"  name="terms" checked/>
-            <label class="form-check-label" for="form2Example31"> Accept the terms </label>
+            <?php
+              if (isset($_SESSION['e_name']))
+              {
+                echo '<div class="error">'.$_SESSION['e_name'].'</div>';
+                unset($_SESSION['e_name']);
+              }
+            ?>
           </div>
-        </div>
 
-        <div class="col">
-          <!-- Simple link -->
-          <a href="login.php">Already have account?</a>
-        </div>
+          <!-- Email input -->
+
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Email address</label>
+            <input type="text" id="form2Example1" class="form-control" value="<?php
+              if (isset($_SESSION['fr_email']))
+              {
+                echo $_SESSION['fr_email'];
+                unset($_SESSION['fr_email']);
+              }
+            ?>" name="email" />
+            
+            <?php
+            if (isset($_SESSION['e_email']))
+              {
+                echo '<div class="error">'.$_SESSION['e_email'].'</div>';
+                unset($_SESSION['e_email']);
+              }
+            ?>
+          </div>
+
+          <!-- Password input -->
+          
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example2">Password</label>
+            <input type="password" id="form2Example2" class="form-control" value="<?php
+              if (isset($_SESSION['fr_password1']))
+              {
+                echo $_SESSION['fr_password1'];
+                unset($_SESSION['fr_password1']);
+              }
+            ?>" name="password1" />
+            <?php
+              if (isset($_SESSION['e_password']))
+              {
+                echo '<div class="error">'.$_SESSION['e_password'].'</div>';
+                unset($_SESSION['e_password']);
+              }
+            ?>
+          </div>
+
+          <!-- Repeat password input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example2">Repeat password</label>
+            <input type="password" id="form2Example2" class="form-control" value="<?php
+              if (isset($_SESSION['fr_password2']))
+              {
+                echo $_SESSION['fr_password2'];
+                unset($_SESSION['fr_password2']);
+              }
+            ?>" name="password2"/>
+          </div>
+
+          <!-- 2 column grid layout for inline styling -->
+
+          <?php
+          if (isset($_SESSION['e_terms'])) {
+            echo '<div class="error text-center">'.$_SESSION['e_terms'].'</div>';
+            unset($_SESSION['e_terms']);
+          }
+          ?>
+
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example31"  name="terms" checked/>
+                <label class="form-check-label" for="form2Example31"> Accept the terms </label>
+              </div>
+            </div>
+
+            <div class="col">
+              <!-- Simple link -->
+              <a href="login.php">Already have account?</a>
+            </div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+          </div>
+          
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="#!">Register</a></p>
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-google"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+              <i class="fab fa-github"></i>
+            </button>
+          </div>
+        </form>
       </div>
-
-      <!-- Submit button -->
-      <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
-
-      <!-- Register buttons -->
-      <div class="text-center">
-        <p>Not a member? <a href="#!">Register</a></p>
-        <p>or sign up with:</p>
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-google"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" class="btn btn-link btn-floating mx-1">
-          <i class="fab fa-github"></i>
-        </button>
+      <!-- Right side Start -->
+      <?php include 'right.php'; ?>
+      <!-- Right side End -->
       </div>
-    </form>
+      <!-- Footer Start -->
+      <?php include 'footer.php'; ?>
+      <!-- Footer End -->
+    
   </body>
 </html>
