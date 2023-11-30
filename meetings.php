@@ -52,7 +52,7 @@
       <!-- Left side End -->
 
             
-      <div class="content">
+      <div class="content px-5">
 
         <!-- Form Start -->
         <div class="form-meeting">

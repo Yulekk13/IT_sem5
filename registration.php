@@ -151,7 +151,7 @@
       <!-- Left side End -->
 
       <div class="content">
-        <h1 class="text-center"> Create Your MeeTy account and join Our Crew!</h1>
+        <h1 class="text-center"> Create Your MeeTy account <br> and join Our Crew!</h1>
 
         <!--  Registration module  -->
         <form method = "post" class="registration">

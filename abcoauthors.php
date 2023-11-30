@@ -34,7 +34,7 @@
       <?php include 'left.php'; ?>
       <!-- Left side End -->
 
-      <article class="content">
+      <article class="content px-5">
         <div class="portfolio">
           <div class="part">
             <h3>Szymon Stolarek</h3>

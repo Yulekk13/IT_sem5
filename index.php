@@ -30,7 +30,7 @@
       <!-- Left side End -->
 
       <!-- Main content Start -->
-      <article class="content">
+      <article class="content px-5">
         <br />
         <h4><b>Welcome to MeeTy: Where Learning Meets Collaboration 🚀</b></h4>
         Are you ready to embark on a journey of collaborative learning, connecting with like-minded

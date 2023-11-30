@@ -30,7 +30,7 @@
       <!-- Left side End -->
 
       <!-- Main content Start -->
-      <article class="content">
+      <article class="content px-5">
         <br />
             <center>
                 <h2><b>Learning Methods 🏫📖</b></h4>

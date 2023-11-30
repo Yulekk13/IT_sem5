@@ -42,7 +42,7 @@
       <?php include 'left.php'; ?>
       <!-- Left side End -->
 
-      <article class="content">
+      <article class="content px-5">
 
         <div class="article-metadata article-class">
           <center>
