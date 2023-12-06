@@ -35,27 +35,25 @@
       <!-- Left side End -->
 
       <article class="content px-5">
-        <div class="portfolio">
-          <div class="part">
-            <h3>Szymon Stolarek</h3>
-            <div class="content">
+        <div class="portfolio w-100">
+        <center><h3>Szymon Stolarek</h3></center>
+          <div class="part flex justify-content-between">
               <div class="image">
-                <img src="pictures/clown1.jpg" class="responsive-picture" />
+                <img src="pictures/clown.jpg" class="responsive-picture mw-50" />
               </div>
-              <div class="description1">
-                <p class="">Tutaj bedzie opis swietnej osoby jaka jest...</p>
+              <div class="text">
+              coscoscoscoscos
               </div>
-            </div>
           </div>
           <br />
-          <div class="part">
-            <h3>Piotr Malec</h3>
-            <div class="description2">
-              <p class="">Tutaj bedzie opis swietnej osoby jaka jest...</p>
-            </div>
-            <div class="image">
-              <img src="pictures/clown2.jpg" class="responsive-picture" />
-            </div>
+          <center><h3>Piotr Malec</h3></center>
+          <div class="part flex justify-content-between">
+              <div class="image">
+                <img src="pictures/clown.jpg" class="responsive-picture mw-50" />
+              </div>
+              <div class="text mw-50">
+                Hey there! I'm Piotr Malec, a third-year student at Silesian University of Technology, diving into website creation on MeeTy. I'm studying Automatics and Robotics, my passion lies in rollerblading and programming. I'm excited to share my academic journey with you, developing this website to help us in learning and discovering new fields of study.
+              </div>
           </div>
         </div>
       </article>

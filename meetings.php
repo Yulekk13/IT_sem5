@@ -57,7 +57,7 @@
         <!-- Form Start -->
         <div class="form-meeting">
 
-          <form class="well form-horizontal" action="addmeeting.php" method="post"  id="contact_form">
+          <form class="well form-horizontal" action="createmeeting.php" method="post"  id="meeting_form">
             <fieldset>
 
               <!-- Form Name -->
@@ -81,15 +81,15 @@
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-solid fa-graduation-cap"></i></span>
               <select name="Subject" class="form-control selectpicker" >
-              <option value="disabled" >Choose subject from the list</option>
-              <option>Dynamics</option>
-              <option>Automatics</option>
-              <option >Mathematics</option>
-              <option >Physics</option>
-              <option >Algebra</option>
-              <option >Programming</option>
-              <option >Robotics</option>
-              <option >Operating systems</option>
+              <option value="" >Choose subject from the list</option>
+              <option value="Dynamics">Dynamics</option>
+              <option value="Automatics">Automatics</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Algebra">Algebra</option>
+              <option value="Programming">Programming</option>
+              <option value="Robotics">Robotics</option>
+              <option value="Operating systems">Operating systems</option>
               </select>
               </div>
               </div>
