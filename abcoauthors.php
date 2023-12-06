@@ -36,27 +36,33 @@
 
       <article class="content px-5">
         <div class="portfolio w-100">
-        <center><h3>Szymon Stolarek</h3></center>
-          <div class="part flex justify-content-between">
-              <div class="image">
-                <img src="pictures/clown.jpg" class="responsive-picture mw-50" />
+          <center><h3>Szymon Stolarek</h3></center>
+          <div class="row">
+              <div class="col-md-6">
+                <img src="pictures/clown.jpg" class="img-fluid" alt="Szymon Stolarek's picture">
               </div>
-              <div class="text">
-              coscoscoscoscos
+              <div class="col-md-6">
+                <div class="text">
+                    Replace this text with information about Szymon Stolarek.
+                </div>
               </div>
           </div>
           <br />
           <center><h3>Piotr Malec</h3></center>
-          <div class="part flex justify-content-between">
-              <div class="image">
-                <img src="pictures/clown.jpg" class="responsive-picture mw-50" />
+          <div class="row">
+              <div class="col-md-6">
+                <img src="pictures/clown.jpg" class="img-fluid" alt="Piotr Malec's picture">
               </div>
-              <div class="text mw-50">
-                Hey there! I'm Piotr Malec, a third-year student at Silesian University of Technology, diving into website creation on MeeTy. I'm studying Automatics and Robotics, my passion lies in rollerblading and programming. I'm excited to share my academic journey with you, developing this website to help us in learning and discovering new fields of study.
+              <div class="col-md-6">
+                <div class="text">
+                    Hey there! I'm Piotr Malec, a third-year student at Silesian University of Technology, diving into website creation on MeeTy. I'm studying Automatics and Robotics, my passion lies in rollerblading and programming. I'm excited to share my academic journey with you, developing this website to help us in learning and discovering new fields of study.
+                </div>
               </div>
           </div>
         </div>
       </article>
+    
+
 
       <!-- Right side Start -->
         <?php include 'right.php'; ?>
