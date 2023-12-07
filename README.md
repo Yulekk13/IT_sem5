@@ -1,4 +1,5 @@
 # IT_sem5
+
 Strona internetowa
 
 Przydatne strony
@@ -16,3 +17,7 @@ https://www.geeksforgeeks.org/how-to-create-analog-clock-using-html-css-and-java
 
 Digital clock:
 https://codepen.io/afarrar/pen/JRaEjP
+
+do zrobienia:
+Automatycznie usuwać spotkania po 1h od rozpoczęcia
+zrobić przesłone na meetings
