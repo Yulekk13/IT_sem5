@@ -2,7 +2,11 @@
 
   require_once 'config/db.php';
   require_once 'config/functions.php';
+  require_once 'config/delate.php';
+
+  delate_old();
   $result = display_data();
+
 
 ?>
 
