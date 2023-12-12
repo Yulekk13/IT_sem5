@@ -91,7 +91,6 @@
 
     </div>
     <!-- Footer Start -->
-    <!-- <footer-component></footer-component> -->
     <?php include 'footer.php'; ?>
     <!-- Footer End -->
   </body>
