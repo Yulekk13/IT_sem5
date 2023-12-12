@@ -43,7 +43,7 @@
               </div>
               <div class="col-md-6">
                 <div class="text">
-                    Replace this text with information about Szymon Stolarek.
+                    Welcome to my corner of the web! My name is Szymon, and I'm a highly ambitious student pursuing a degree in Automation and Robotics. With a deep passion for soccer, sports hold a special place in my heart. Beyond the thrill of the game, I have a profound appreciation for the world of programming and electronics, where my enthusiasm truly comes to life. Join me on this educational odyssey, where technology and an insatiable thirst for knowledge unite on my platform. Explore curated learning materials and find links to online meetings connecting like-minded individuals eager to embark on the journey of acquiring new skills.
                 </div>
               </div>
           </div>
