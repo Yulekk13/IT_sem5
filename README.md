@@ -19,5 +19,5 @@ Digital clock:
 https://codepen.io/afarrar/pen/JRaEjP
 
 do zrobienia:
-Automatycznie usuwać spotkania po 1h od rozpoczęcia
+
 zrobić przesłone na meetings
