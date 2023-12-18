@@ -1,5 +1,9 @@
 <?php
-
+  include 'navbar.php';
+  if (!isset($_SESSION['loggedin'])) {
+    header('Location: login.php');
+    exit();
+  }
   require_once 'config/db.php';
   require_once 'config/functions.php';
   require_once 'config/delate.php';
@@ -46,7 +50,6 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
 
     <div class="container-fluid d-flex flex-row min-vh-100">

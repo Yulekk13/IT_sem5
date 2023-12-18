@@ -17,6 +17,3 @@ https://www.geeksforgeeks.org/how-to-create-analog-clock-using-html-css-and-java
 
 Digital clock:
 https://codepen.io/afarrar/pen/JRaEjP
-
-do zrobienia:
-zrobić przesłone na meetings
