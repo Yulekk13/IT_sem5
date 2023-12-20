@@ -89,7 +89,7 @@
                 </div>
               </div>
 
-              <!-- Subject Name -->
+              <!-- Subject Subject -->
               <div class="form-group"> 
               <label class="col-md-4 control-label">Subject:</label>
               <div class="col-md-4 selectContainer">
@@ -105,6 +105,29 @@
               <option value="Programming">Programming</option>
               <option value="Robotics">Robotics</option>
               <option value="Operating systems">Operating systems</option>
+              </select>
+              </div>
+              </div>
+              </div>
+
+              <!-- Discord Room -->
+              <div class="form-group"> 
+              <label class="col-md-4 control-label">Choose room on discord:</label>
+              <div class="col-md-4 selectContainer">
+              <div class="input-group">
+              <span class="input-group-addon"><i class="fa-brands fa-discord"></i></span>
+              <select name="Room" class="form-control selectpicker" >
+              <option value="" >Choose room from the list</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
               </select>
               </div>
               </div>
@@ -138,7 +161,7 @@
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-regular fa-comment"></i></i></span>
-              <textarea class="form-control" name="Description" placeholder="Description"></textarea>
+              <textarea class="form-control" name="Description" placeholder="Choose your room on discord (1-10) and add description"></textarea>
               </div>
               </div>
               </div>
@@ -167,6 +190,7 @@
               <tr class="bg-dark text-white border border-dark">
                 <td> Name </td>
                 <td> Subject </td>
+                <td> Discord room </td>
                 <td> Date </td>
                 <td> Time </td>
                 <td> Extra information </td>
@@ -175,6 +199,7 @@
                 <tr>
                   <td><?php echo $row['Name'] ?></td>
                   <td><?php echo $row['Subject'] ?></td>
+                  <td><?php echo $row['Room'] ?></td>
                   <td class="no-wrap"><?php echo $row['Date'] ?></td>
                   <td><?php echo $row['Time'] ?></td>
                   <td><?php echo $row['Description'] ?></td>
