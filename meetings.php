@@ -154,7 +154,7 @@
             <h3>Future MeeTyings</h3>
           </div>
           
-          <div class="meeting">
+          <div class="meeting flex">
             <table class="table table-border table-secondary text-center">
               <tr class="bg-dark text-white border border-dark">
                 <td> Name </td>

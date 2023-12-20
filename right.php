@@ -1,5 +1,5 @@
 <aside class="right-side">
-  <div class="date">
+  <div class="date hide-mobile">
     DATE: <br />
     <span id="day"></span>
     <span>.</span>
@@ -7,7 +7,7 @@
     <span>.</span>
     <span id="year"></span>
   </div>
-  <div class="clock">
+  <div class="clock hide-mobile">
     TIME: <br />
     <span id="hours">00</span>
     <span>:</span>
@@ -25,6 +25,10 @@
     align-items: center;
   }
 
+  @media only screen and (max-width: 600px) {
+   .hide-mobile 
+   {display:none;}
+  }
   .clock {
     font-family: Arial, Helvetica, sans-serif;
     color: #ecfcfc;
