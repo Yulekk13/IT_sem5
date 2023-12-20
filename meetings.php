@@ -45,7 +45,15 @@
       .article-paragraph {
         text-indent: 2em;
       }
+
+      .table td.no-wrap {
+        white-space: nowrap;
+      }
       </style>
+
+ 
+  
+
   </head>
 
   <body>
@@ -126,11 +134,11 @@
 
               <!-- Description -->
               <div class="form-group">
-              <label class="col-md-4 control-label">Describe your class</label>
+              <label class="col-md-4 control-label">Extra information</label>
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-regular fa-comment"></i></i></span>
-              <textarea class="form-control" name="Description" placeholder="MeeTying Description"></textarea>
+              <textarea class="form-control" name="Description" placeholder="Description"></textarea>
               </div>
               </div>
               </div>
@@ -154,32 +162,25 @@
             <h3>Future MeeTyings</h3>
           </div>
           
-          <div class="meeting flex">
-            <table class="table table-border table-secondary text-center">
+          <div class="table-responsive">
+            <table class="table table-border table-secondary text-center align-middle">
               <tr class="bg-dark text-white border border-dark">
                 <td> Name </td>
                 <td> Subject </td>
                 <td> Date </td>
                 <td> Time </td>
-                <td> Description </td>
+                <td> Extra information </td>
               </tr>
-              <tr>
-                <?php
+              <?php while($row = mysqli_fetch_assoc($result)) { ?>
+                <tr>
+                  <td><?php echo $row['Name'] ?></td>
+                  <td><?php echo $row['Subject'] ?></td>
+                  <td class="no-wrap"><?php echo $row['Date'] ?></td>
+                  <td><?php echo $row['Time'] ?></td>
+                  <td><?php echo $row['Description'] ?></td>
+                </tr>
+              <?php } ?>
 
-                  while($row = mysqli_fetch_assoc($result))
-                  {
-                    ?>
-                    <td><?php echo $row['Name'] ?></td>
-                    <td><?php echo $row['Subject'] ?></td>
-                    <td><?php echo $row['Date'] ?></td>
-                    <td><?php echo $row['Time'] ?></td>
-                    <td><?php echo $row['Description'] ?></td>
-                    </tr>
-                    <?php
-                  }
-                  
-                ?>
-              
             </table>
           </div>
 
