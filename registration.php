@@ -1,4 +1,5 @@
 <?php
+  include 'navbar.php';
   if (isset($_POST['email'])) {
       $all_OK = true;
   
@@ -143,7 +144,6 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
     <div class="container-fluid d-flex flex-row min-vh-100">
       <!-- Left side Start -->
