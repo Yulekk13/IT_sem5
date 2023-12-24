@@ -118,16 +118,16 @@
               <span class="input-group-addon"><i class="fa-brands fa-discord"></i></span>
               <select name="Room" class="form-control selectpicker" >
               <option value="" >Choose room from the list</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
+              <option value="https://discord.gg/tsJfv43h7r">1</option>
+              <option value="https://discord.gg/nznnQWZmy2">2</option>
+              <option value="https://discord.gg/3RzpjNxqDV">3</option>
+              <option value="https://discord.gg/UjZnkyfYXY">4</option>
+              <option value="https://discord.gg/He5jsPmYa7">5</option>
+              <option value="https://discord.gg/y3eGsNQ55V">6</option>
+              <option value="https://discord.gg/bCeXyntAYm">7</option>
+              <option value="https://discord.gg/ZUxZXCGyMv">8</option>
+              <option value="https://discord.gg/dtHBnTfhQh">9</option>
+              <option value="https://discord.gg/7gh6r2uZHP">10</option>
               </select>
               </div>
               </div>
@@ -199,7 +199,7 @@
                 <tr>
                   <td><?php echo $row['Name'] ?></td>
                   <td><?php echo $row['Subject'] ?></td>
-                  <td><?php echo $row['Room'] ?></td>
+                  <td><a href=<?php echo $row['Room'] ?>><i class="fa-solid fa-volume-high"></i></a></td>
                   <td class="no-wrap"><?php echo $row['Date'] ?></td>
                   <td><?php echo $row['Time'] ?></td>
                   <td><?php echo $row['Description'] ?></td>
