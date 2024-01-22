@@ -161,7 +161,7 @@
               <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
               <span class="input-group-addon"><i class="fa-regular fa-comment"></i></i></span>
-              <textarea class="form-control" name="Description" placeholder="Choose your room on discord (1-10) and add description"></textarea>
+              <textarea class="form-control" name="Description" placeholder="Add short description"></textarea>
               </div>
               </div>
               </div>
