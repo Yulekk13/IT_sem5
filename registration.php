@@ -93,7 +93,7 @@
 					if ($connection->query("INSERT INTO users VALUES (NULL, '$name', '$email', '$password_hash')"))
 					{
 						$_SESSION['successreg']=true;
-						// header('Location: witamy.php');  ----> przekierowanie powrót do pprzedniej strony
+						header('Location: login.php');
 					}
 					else
 					{
