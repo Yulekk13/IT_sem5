@@ -1,4 +1,5 @@
 <?php
+  include 'navbar.php';
   if (isset($_POST['email'])) {
       $all_OK = true;
   
@@ -92,7 +93,7 @@
 					if ($connection->query("INSERT INTO users VALUES (NULL, '$name', '$email', '$password_hash')"))
 					{
 						$_SESSION['successreg']=true;
-						// header('Location: witamy.php');  ----> przekierowanie powrót do pprzedniej strony
+						header('Location: login.php');
 					}
 					else
 					{
@@ -143,7 +144,6 @@
 
   <body>
     <!-- Navbar Start -->
-    <?php include 'navbar.php'; ?>
     <!-- End of navbar -->
     <div class="container-fluid d-flex flex-row min-vh-100">
       <!-- Left side Start -->
